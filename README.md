@@ -2,6 +2,8 @@
 
 **DevOps Engineer | Cloud Infrastructure | Automation Enthusiast**
 
+[![GitHub Pages Deployment](https://github.com/abinaya-devi/resume/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/abinaya-devi/resume/actions/workflows/pages/pages-build-deployment)
+
 ---
 
 ### 🚀 About Me
@@ -49,9 +51,9 @@ I am a DevOps Engineer with **7.6 years of experience** in designing, deploying,
 ---
 
 ### 📫 Connect With Me
-<a href="https://abinaya-devi.github.io/resume/" target="_blank"><i class="fab fa-github-alt"></i> Resume Website</a>  
-<a href="https://in.linkedin.com/in/abinaya-devi-chandrasekaran-76a4581b2" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>  
-<a href="mailto:abinaya.social@gmail.com"><i class="fas fa-envelope"></i> Email</a>  
+- 🌐 [Resume Website](https://abinaya-devi.github.io/resume/)  
+- 🔗 [LinkedIn](https://in.linkedin.com/in/abinaya-devi-chandrasekaran-76a4581b2)  
+- 📧 [Email](mailto:abinaya.social@gmail.com)  
 
 ---
 
