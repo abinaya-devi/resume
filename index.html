@@ -3,152 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <title>Abinaya Devi C - DevOps Engineer</title>
+  <meta name="description" content="Interactive DevOps resume created with HTML and CSS">
+  <meta name="author" content="Abinaya Devi C">
+  <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #6a11cb, #2575fc); /* New purple-blue gradient */
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 40px;
-      background: rgba(255,255,255,0.9);
-    }
-    header h1 { font-size: 2.5em; color: #2c3e50; }
-    header h2 { color: #2575fc; }
-    nav {
-      text-align: center;
-      background: #2c3e50;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h3 {
-      color: #2575fc;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    ul { list-style: none; padding: 0; }
-    ul li {
-      margin: 8px 0;
-      padding: 8px;
-      background: #eef6ff;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(255,255,255,0.9);
-    }
-    .dark-mode { background: #2c3e50; color: #ecf0f1; }
-    .dark-mode section { background: #34495e; color: #ecf0f1; }
-    .toggle-btn {
-      cursor: pointer;
-      background: #2575fc;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 5px;
-      border: none;
-      margin-top: 10px;
-    }
-  </style>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
+    <div>
+      <img src="./img/avatar.jpg" alt="Profile Picture" />
+    </div>
     <h1>Abinaya Devi C</h1>
-    <h2>DevOps Engineer</h2>
-    <p>Email: <a href="mailto:abinaya.social@gmail.com">abinaya.social@gmail.com</a></p>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <section>
+      <p>DevOps Engineer with 7.6 years of experience in AWS and Azure cloud environments. Passionate about automation, CI/CD pipelines, and scalable cloud solutions.</p>
+      <a href="https://abinaya-devi.github.io/resume/" target="_blank"><i class="fab fa-github-alt"></i></a>
+      <a href="https://in.linkedin.com/in/abinaya-devi-chandrasekaran-76a4581b2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:abinaya.social@gmail.com"><i class="fas fa-envelope"></i></a>
+    </section>
   </header>
 
-  <nav>
-    <a href="#summary">Summary</a>
-    <a href="#objective">Objective</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#awards">Awards</a>
-  </nav>
+  <main>
+    <section>
+      <h3>Professional Summary</h3>
+      <p>Highly experienced Cloud Engineer with strong background in designing, developing, and managing cloud-based solutions. Expertise in Kubernetes, Terraform, Ansible, and CI/CD pipelines across AWS and Azure.</p>
+    </section>
 
-  <section id="summary">
-    <h3>Professional Summary</h3>
-    <p>DevOps Engineer with 7.6 years of experience in AWS and Azure cloud environments. Highly experienced Cloud Engineer with strong background in designing, developing, and managing cloud-based solutions. Expertise in scalable microservices architecture on Kubernetes.</p>
-  </section>
+    <section>
+      <h3>Career Objective</h3>
+      <p>To work in a challenging environment where I can apply my knowledge, achieve organizational goals, and continue to grow my skills.</p>
+    </section>
 
-  <section id="objective">
-    <h3>Career Objective</h3>
-    <p>To work in a challenging environment where I can expose my knowledge and work towards achieving the organization’s goal as well as nourish my skills.</p>
-  </section>
+    <section>
+      <h3>Technical Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Cloud</h4>
+          <ul><li>AWS</li><li>Azure</li></ul>
+        </div>
+        <div class='column'>
+          <h4>DevOps Tools</h4>
+          <ul><li>Terraform</li><li>Ansible</li><li>Kubernetes</li><li>Docker</li><li>Azure Repos</li></ul>
+        </div>
+        <div class='column'>
+          <h4>Other</h4>
+          <ul><li>Python 3.7</li><li>Git / Bitbucket</li><li>JIRA, ServiceNow, Azure Boards</li></ul>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h3>Technical Skills</h3>
-    <ul>
-      <li><strong>Cloud:</strong> AWS, Azure</li>
-      <li><strong>Programming:</strong> Python 3.7</li>
-      <li><strong>Tools:</strong> JIRA, ServiceNow, Azure Boards</li>
-      <li><strong>Containerization:</strong> Docker, Kubernetes</li>
-      <li><strong>DevOps:</strong> Terraform, Ansible, Azure Repos</li>
-      <li><strong>Version Control:</strong> Git, Bitbucket</li>
-    </ul>
-  </section>
+    <section>
+      <h3>Experience</h3>
+      <article>
+        <div class='job-title'>
+          <span>Oct 2021 – Present</span> <strong>Accenture, Chennai</strong><br> <strong>Position:</strong> Application Development Senior Analyst (DevOps Engineer)
+        </div>
+        <div>
+          <ul class="job-description">
+            <li>Automated infrastructure provisioning with Terraform for AWS & Azure.</li>
+            <li>Created CI/CD pipelines in Azure and AWS.</li>
+            <li>Designed Docker & Kubernetes deployments, autoscaling solutions, Helm charts.</li>
+            <li>Implemented logging with ELK stack, monitored Kubernetes clusters.</li>
+          </ul>
+        </div>
+      </article>
 
-  <section id="experience">
-    <h3>Experience (7.6 Years)</h3>
-    <p><strong>Accenture (Oct 2021 – Present)</strong> – Senior Analyst, DevOps Engineer</p>
-    <ul>
-      <li>Automated infrastructure provisioning with Terraform for AWS & Azure.</li>
-      <li>Created CI/CD pipelines in Azure and AWS.</li>
-      <li>Designed Docker & Kubernetes deployments, autoscaling solutions, Helm charts.</li>
-      <li>Implemented logging with ELK stack, monitored Kubernetes clusters.</li>
-    </ul>
+      <article>
+        <div class='job-title'>
+          <span>Sep 2019 – Oct 2021</span> <strong>Cognizant, Chennai</strong><br> <strong>Position:</strong> Associate, AWS Senior Engineer
+        </div>
+        <div>
+          <ul class="job-description">
+            <li>Hosted web apps on S3 + CloudFront, backend with Lambda & API Gateway.</li>
+            <li>Automated configs with Ansible, migrated apps via CloudFormation & Terraform.</li>
+            <li>Led migration from Azure to AWS for better security.</li>
+          </ul>
+        </div>
+      </article>
 
-    <p><strong>Cognizant (Sep 2019 – Oct 2021)</strong> – Associate, AWS Senior Engineer</p>
-    <ul>
-      <li>Hosted web apps on S3 + CloudFront, backend with Lambda & API Gateway.</li>
-      <li>Automated configs with Ansible, migrated apps via CloudFormation & Terraform.</li>
-      <li>Led migration from Azure to AWS for better security.</li>
-    </ul>
+      <article>
+        <div class='job-title'>
+          <span>Jul 2016 – Sep 2019</span> <strong>TCS, Chennai</strong><br> <strong>Position:</strong> System Engineer
+        </div>
+        <div>
+          <ul class="job-description">
+            <li>Maintained reconciliation apps on AWS.</li>
+            <li>Managed SSL certificates, DNS mapping, Unix/Linux administration.</li>
+            <li>Database management with SQL Server.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
 
-    <p><strong>TCS (Jul 2016 – Sep 2019)</strong> – System Engineer</p>
-    <ul>
-      <li>Maintained reconciliation apps on AWS.</li>
-      <li>Managed SSL certificates, DNS mapping, Unix/Linux administration.</li>
-      <li>Database management with SQL Server.</li>
-    </ul>
-  </section>
-
-  <section id="awards">
-    <h3>Awards & Recognitions</h3>
-    <ul>
-      <li>On the Spot Award</li>
-      <li>Star Performer Award</li>
-      <li>Best People Award – Quick Learner</li>
-      <li>Wall of Fame Excellence Award (2021–2022)</li>
-    </ul>
-  </section>
+    <section>
+      <h3>Awards & Recognitions</h3>
+      <ul>
+        <li>On the Spot Award</li>
+        <li>Star Performer Award</li>
+        <li>Best People Award – Quick Learner</li>
+        <li>Wall of Fame Excellence Award (2021–2022)</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 Abinaya Devi C</p>
+    <p>© 2026 Abinaya Devi C | <a href="mailto:abinaya.social@gmail.com">abinaya.social@gmail.com</a></p>
   </footer>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 </body>
 </html>
-
