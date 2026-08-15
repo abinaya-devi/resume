@@ -1,4 +1,4 @@
-# 👩‍💻 Abinaya Devi C
+# 👩‍💻 Abinaya Devi Chandrasekaran
 
 **DevOps Engineer | Cloud Infrastructure | Automation Enthusiast**
 
