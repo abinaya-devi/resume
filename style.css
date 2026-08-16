@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 body {
   margin: 0;
-  font-family: 'Raleway';
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 1.8em;
 }
 
 a {
-  color: #1C9C94;
+  color: #1c9c94;
   text-decoration: none;
 }
 
@@ -17,24 +17,26 @@ a:hover {
 }
 
 article {
-  padding:0 1em;
+  padding: 0 1em;
 }
 
-section{
+section {
   margin: 1em;
   padding: 1em;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   margin: 0 auto;
 }
 
 header {
   padding: 2em;
   text-align: center;
-  background-image: url('./img/devops-bg.jpg');
+  background-image: url("./img/devops-bg.jpg");
   background-size: cover;
-  background-position: fixed;
+  background-attachment: fixed; /* corrected */
   color: white;
 }
 
@@ -57,7 +59,8 @@ h3 {
   text-transform: uppercase;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-weight: bold;
 }
 
@@ -84,22 +87,19 @@ a .fab {
   color: white;
 }
 
-.course, .skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
+.course,
+.skills {
+  display: flex; /* modern flex only */
   flex-wrap: wrap;
 }
 
 .course .title {
   color: #509e98;
-  -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
 }
 
 .course .descrition {
-  -ms-flex: 0 0 66.6%;
   flex: 0 0 66.6%;
   max-width: 66.6%;
 }
@@ -109,41 +109,43 @@ a .fab {
 }
 
 .skills .column {
-  -ms-flex: 0 0 50%%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.skills .column ul, ul.job-description {
+.skills .column ul,
+ul.job-description {
   list-style-type: none;
 }
 
-.skills .column ul > li:before {
+.skills .column ul > li::before {
   content: "►";
   padding-right: 0.5em;
   color: #509e98;
 }
 
-.school, .job-title {
+.school,
+.job-title {
   text-transform: capitalize;
 }
 
-.school span, .job-title span {
+.school span,
+.job-title span {
   color: #889499;
   text-decoration: underline;
 }
 
-ul.job-description li:before{
+ul.job-description li::before {
   content: "✔";
   padding-right: 0.5em;
   color: #509e98;
 }
 
 footer {
- padding: 1em 1.5em;
- background: #4C00B0;
- color: white;
- text-align: right;
+  padding: 1em 1.5em;
+  background: #4c00b0;
+  color: white;
+  text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,7 +153,8 @@ footer {
     display: block;
   }
 
-  .course .title, .course .descrition {
+  .course .title,
+  .course .descrition {
     max-width: 100%;
   }
 }
