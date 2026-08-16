@@ -1,0 +1,52 @@
+name: Static Site CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run HTMLHint
+        run: |
+          npm install -g htmlhint
+          htmlhint "**/*.html"
+
+      - name: Run Stylelint
+        run: |
+          npm install -g stylelint stylelint-config-standard
+          stylelint "**/*.css"
+
+      - name: Run ESLint
+        run: |
+          npm install -g eslint
+          eslint "**/*.js"
+
+  approval:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Wait for manual approval
+        uses: trstringer/manual-approval@v1
+        with:
+          approvers: abinaya-devi
+          minimum-approvals: 1
+          issue-title: "Deploy approval required"
+          issue-body: "Please approve deployment of the static site."
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: approval
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
