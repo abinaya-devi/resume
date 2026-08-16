@@ -89,7 +89,7 @@ a .fab {
 
 .course,
 .skills {
-  display: flex; /* modern flex only */
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -118,6 +118,14 @@ ul.job-description {
   list-style-type: none;
 }
 
+/* General selector first */
+ul.job-description li::before {
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+/* More specific selector after */
 .skills .column ul > li::before {
   content: "►";
   padding-right: 0.5em;
@@ -135,12 +143,6 @@ ul.job-description {
   text-decoration: underline;
 }
 
-ul.job-description li::before {
-  content: "✔";
-  padding-right: 0.5em;
-  color: #509e98;
-}
-
 footer {
   padding: 1em 1.5em;
   background: #4c00b0;
@@ -148,7 +150,8 @@ footer {
   text-align: right;
 }
 
-@media only screen and (max-width: 768px) {
+/* Modern media query syntax */
+@media (width <= 768px) {
   .course {
     display: block;
   }
@@ -159,7 +162,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media (width <= 576px) {
   .skills {
     display: block;
   }
