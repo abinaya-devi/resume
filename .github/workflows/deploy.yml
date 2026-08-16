@@ -32,6 +32,7 @@ jobs:
           minimum-approvals: 1
           issue-title: "Deploy approval required"
           issue-body: "Please approve deployment of the static site."
+          secret: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     runs-on: ubuntu-latest
